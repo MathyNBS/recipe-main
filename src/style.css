@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url('/assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'YoungSerif';
+    src: url('/assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+}
+
+::marker {
+    color: hsl(14, 45%, 36%);
+}
+
+h1, h2 {
+    font-family: 'YoungSerif';
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    color: hsl(14, 45%, 36%);
+}
+
+h3, p , li, td {
+    font-family: 'Outfit';
+    color: hsl(30, 10%, 34%);
+}
+
+p {
+    margin-bottom: 25px;
+}
+
+li {
+    margin: 0 0 10px 0;
+}
+
+hr {
+    border: 1px solid rgb(238, 238, 238);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    background-color: hsl(30, 54%, 90%);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 100%);
+    width: 45em;
+}
+
+.omelette {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.omelette img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.body-text {
+    margin: 0 30px 30px 30px;
+    text-align: left;
+}
+
+.preparation-time {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 10px;
+    height: 10em;
+}
+
+.preparation-time h3 {
+    color: hsl(332, 51%, 32%);
+    margin: 10px 0 10px 0;
+    padding: 5px 0 0 25px;
+}
+
+.preparation-time ul {
+    margin: 10px 0 10px 0;
+}
+
+.preparation-time li {
+    margin-left: 7px;
+    padding: 0 0 0 20px;
+}
+
+.ingredients {
+    margin: 16px 0 26px 0;
+    padding: 0 0 0 20px;
+}
+
+.ingredients li {
+    margin-left: 0;
+    padding: 0 0 0 18px;
+}
+
+.instructions {
+    margin: 16px 0 26px 0;
+    padding: 0 0 0 20px;
+}
+
+.instructions li {
+    padding: 0 0 0 18px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr, td {
+    padding: 8px 0 8px 0;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.td-left {
+    padding-left: 35px;
+}
+
+.td-right {
+    padding-right: 37px;
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        margin: 0;
+    }
+    
+    main {
+        width: 100%;
+    }
+
+    .omelette {
+        margin: 0;
+    }
+
+    .omelette img {
+        width: 100%;
+        border-radius: 0;
+    }
+}
